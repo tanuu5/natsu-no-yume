@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>夏の夢</title>
+<link rel="icon" href="data:,">
+<script type="importmap">{ "imports": { "three": "../node_modules/three/build/three.module.js", "three/addons/": "../node_modules/three/examples/jsm/" } }</script>
+<script>window.addEventListener("error", (e) => { window.reelError = window.reelError || (e.message + " @ " + e.filename + ":" + e.lineno); });</script>
+<style>
+  @font-face { font-family: "Archivo"; src: url("../fonts/archivo/Archivo%5Bwdth,wght%5D.ttf") format("truetype"); font-weight: 100 900; font-stretch: 62% 125%; }
+  @font-face { font-family: "Instrument Serif"; src: url("../fonts/instrumentserif/InstrumentSerif-Regular.ttf") format("truetype"); font-style: normal; font-weight: 400; }
+  @font-face { font-family: "Instrument Serif"; src: url("../fonts/instrumentserif/InstrumentSerif-Italic.ttf") format("truetype"); font-style: italic; font-weight: 400; }
+  @font-face { font-family: "JetBrains Mono"; src: url("../fonts/jetbrainsmono/JetBrainsMono%5Bwght%5D.ttf") format("truetype"); font-weight: 100 800; }
+  @font-face { font-family: "Dela Gothic One"; src: url("../fonts/delagothicone/DelaGothicOne-Regular.ttf") format("truetype"); }
+  @font-face { font-family: "Shippori Mincho B1"; src: url("../fonts/shipporiminchob1/ShipporiMinchoB1-Regular.ttf") format("truetype"); font-weight: 400; }
+  @font-face { font-family: "Shippori Mincho B1"; src: url("../fonts/shipporiminchob1/ShipporiMinchoB1-Medium.ttf") format("truetype"); font-weight: 500; }
+  @font-face { font-family: "Shippori Mincho B1"; src: url("../fonts/shipporiminchob1/ShipporiMinchoB1-SemiBold.ttf") format("truetype"); font-weight: 600; }
+  html, body { margin: 0; background: #000; overflow: hidden; }
+  canvas { display: block; width: 1920px; height: 1080px; }
+  body.preview { display: grid; place-items: center; height: 100vh; }
+  body.preview canvas { width: min(100vw, calc(100vh * 16 / 9 - 40px)); height: auto; aspect-ratio: 16 / 9; cursor: pointer; }
+  #info { position: fixed; bottom: 6px; left: 0; right: 0; text-align: center; color: #777; font: 12px/1 monospace; }
+  body:not(.preview) #info { display: none; }
+</style>
+</head>
+<body>
+<canvas id="gl" width="1920" height="1080"></canvas>
+<div id="info"></div>
+<script type="module" src="main.js"></script>
+</body>
+</html>

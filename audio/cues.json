@@ -1,0 +1,87 @@
+{
+  "bpm": 80,
+  "beat": 0.75,
+  "bar": 3,
+  "duration": 96,
+  "bars": 32,
+  "xfade": 2,
+  "segments": [
+    {
+      "id": "morning",
+      "start": 0,
+      "end": 24,
+      "clock": "6:40",
+      "place": "棚田",
+      "title": "朝"
+    },
+    {
+      "id": "noon",
+      "start": 24,
+      "end": 45,
+      "clock": "12:30",
+      "place": "坂道",
+      "title": "昼"
+    },
+    {
+      "id": "afternoon",
+      "start": 45,
+      "end": 66,
+      "clock": "16:50",
+      "place": "海の見える駅",
+      "title": "午後"
+    },
+    {
+      "id": "sunset",
+      "start": 66,
+      "end": 84,
+      "clock": "18:55",
+      "place": "漁港",
+      "title": "夕暮れ"
+    },
+    {
+      "id": "night",
+      "start": 84,
+      "end": 96,
+      "clock": "19:40",
+      "place": "棚田",
+      "title": "夜"
+    }
+  ],
+  "ev": {
+    "fadeIn": [
+      0,
+      2.5
+    ],
+    "drops": [
+      1.6,
+      3.9
+    ],
+    "title": [
+      3,
+      9
+    ],
+    "kite": 10.5,
+    "chimes": [
+      30,
+      33.375,
+      36.75
+    ],
+    "crossing": [
+      43.8,
+      50.2
+    ],
+    "trainArrive": 47.13,
+    "trainPass": [
+      47.13,
+      49.02
+    ],
+    "trainStop": 52.5,
+    "trainDepart": 57,
+    "trainGone": 66,
+    "sunTouch": 75,
+    "night": 84,
+    "fireflies": 87,
+    "endTitle": 88.5,
+    "end": 96
+  }
+}

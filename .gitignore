@@ -1,0 +1,8 @@
+node_modules/
+# OFL fonts are fetched on demand with `npm run fonts`
+fonts/
+# renders (large): out/*.mp4, out/audio.wav, stills, contact sheets
+out/
+__pycache__/
+.DS_Store
+*.log
